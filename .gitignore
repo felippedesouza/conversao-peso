@@ -10,6 +10,8 @@
 *.userosscache
 *.sln.docstates
 
+k8s-iniciativa-kubernetes-kubeconfig.yaml
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 

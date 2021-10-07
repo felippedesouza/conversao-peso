@@ -2,9 +2,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: web-peso
+  name: deployment-app
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: web-peso
@@ -14,22 +14,21 @@ spec:
         app: web-peso
     spec:
       containers:
-        - name: web-peso
+        - name: container-app
           image: felippedeiro/conversao-peso:v1
           ports:
-            - containerPort: 5000
+            - containerPort: 80
 ---
 # Service da aplicação web
 apiVersion: v1
 kind: Service
 metadata:
-  name: web-peso
+  name: service-app
 spec:
   selector:
     app: web-peso
   ports:
-    - port: 80
-      # vai bater na porta 80 do service, mas vai ser redirecionado pra porta 8080 do container
-      targetPort: 5000
-      nodePort: 30001
-  type: LoadBalancer
+    - port: 80 
+      targetPort: 80
+      nodePort: 30000
+  type: NodePort

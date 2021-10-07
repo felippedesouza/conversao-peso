@@ -26,11 +26,7 @@ Infra desenvolvida no evento Iniciativa Kubernetes
 1. `cd conversao-peso/`
 1. `kind create cluster --name meucluster --config cluster.yaml`
 1. `kubectl apply -f ./k8s/deployment.yaml` (`kubectl delete -f ./k8s/deployment.yaml` para remover tudo que foi feito)
-1. `kubectl get all`, copie o name do pod
-![](./img/img-5.png)
-1. `kubectl port-forward pod/web-peso-678f9fc67b-xwn2g 5000:80`
-![](./img/img-6.png)
-1. abra o navegador cole a url `localhost:5000`
+1. quando abra o navegador cole a url `localhost:8080`
 
 ## Com CI/CD e Digital Ocean
 
