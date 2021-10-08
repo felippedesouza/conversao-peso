@@ -2,6 +2,8 @@
 
 Infra desenvolvida no evento Iniciativa Kubernetes
 
+[Outros desafios](https://github.com/felippedesouza/iniciativa-kubernetes-2021-09)
+
 **Crie sua conta no DockerHub, depois pegue seu username e mude em todos os arquivos do app. Por exemplo de `felippedeiro/conversao-peso` para `<seu-username>/conversao-peso`. Os arquivos que terão que ser modificado são: 'k8s/deployment.yaml', 'github/workflows/main.yml'**
 
 ## Com Docker
