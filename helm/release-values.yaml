@@ -1,0 +1,4 @@
+web:
+  service:
+    type: LoadBalancer
+    nodePort: 

@@ -1,0 +1,6 @@
+web:
+  imageName: felippedeiro/conversao-peso
+  imageTag: v1
+  service:
+    type: NodePort
+    nodePort: 30000

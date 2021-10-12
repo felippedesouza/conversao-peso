@@ -1,0 +1,6 @@
+Release {{ .Release.Name }} aplicado com sucesso!!!
+
+Pra acessar, verifique o service executando o comando abaixo:
+-> watch 'kubectl get all'
+ou
+-> kubectl get service {{ .Release.Name }}-web
